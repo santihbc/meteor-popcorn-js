@@ -13,7 +13,7 @@ Install the package through *meteorite*: `mrt add popcorn`
 ### How to use it in Meteor
 ===
 
-If you want to use Popcorn.js to create a player inside a *div* which is contained in a template named *myTemplate*, we have to use the `Template.myTemplate.rendered` callback to make sure the call to Popcorn.js is only executed once the *div* we want to target has been rendered.
+If you want to use Popcorn.js to create a player inside a *div* which is contained in a template named *myTemplate*, we have to use the `Template.myTemplate.rendered` callback to make sure the call to Popcorn.js is only executed once the HTML element we want to target has been rendered.
 
 Here is a basic example:
 
@@ -28,6 +28,7 @@ Here is a basic example:
 	</body>
 
 	<template name='myTemplate'>
+		// HTML element where the Popcorn video will be inserted in
 		<div id='youtube-video'></div>
 	</template>
 
